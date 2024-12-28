@@ -112,7 +112,7 @@ class BitOa:
     def post_login(self):
         url = "https://login.bit.edu.cn/authserver/login"
         params = {
-            "service": "https://libresource.bit.edu.cn/login/self/"
+            "service": self.service
         }
         data = self.get_login()
         logger.info(f"请求参数准备成功: {data}")
